@@ -1,0 +1,19 @@
+#app{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 100px;
+    height: 100vh;
+}
+
+*{
+    border: 1px solid red;
+}
+
+header{
+    grid-row: 1/4;
+}
+
+main{
+    grid-column: 2/4;
+    grid-row: 1/3;
+}

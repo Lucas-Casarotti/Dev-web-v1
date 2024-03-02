@@ -1,0 +1,5 @@
+1. Alterar o texto de um elemento: Escreva um script que altere o texto de um elemento HTML, como um parágrafo ou um título.
+
+2. Alterar o estilo de um elemento: Escreva um script que altere o estilo de um elemento HTML, como a cor de fundo ou a largura de uma div.
+
+

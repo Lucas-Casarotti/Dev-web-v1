@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerando QRCode Pix</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="principal">
+        <div>
+            <button id="btnQRCode">Gerar QRCode</button>
+        </div>
+    </div>
+
+    <div id="divModal" class="divModal">
+        <div id="modal" class="modal">
+            <div class="modal-content" id="modal-content">
+                <button type="button" id="btnFecharDiv" class="btnFecharDiv">X</button>
+                <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+                    <div>
+                        <div>
+                            <img id="img" src="images/pix.png" style="height: 60px; padding: 10px;" />
+                        </div>
+                    </div>
+                    <div>
+                        <div style="border: 0px solid; border-radius: 20px; padding: 10px; margin-top: 5px; background-color: #F5F5F5; text-align: center;">
+                            <p style="font-weight: bold;">Aguardando pagamento</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-bottom: 20px;">
+                    <div>
+                        <img id="imgQrCode" src="images/qrcode.png" style="height: 200px; width: 200px;" />
+                    </div>
+                    <div style="font-weight: bold;">
+                        <p>Realize o pagamento escaneando o QR Code acima</p>
+                    </div>
+                    <div style="text-align: center; background-color: #F5F5F5; margin-top: 20px;">
+                        <p style="padding-bottom: 10px; font-weight: bold;">Ou pague copiando o código abaixo:</p>
+                        <div id="texto-copiado" style="text-align: center; background-color: #F5F5F5;">
+                            <p ID="CD_Pix" style="background-color: #F5F5F5;">00020126580014BR.GOV.BCB.PIX0136ba85bf07-1659-45e5-9b99-9c551769d10b52040000530398654041.005802BR5925Lucas Matheus Casarotti R6009SAO PAULO62140510qpnQseqJEm63040148</p>
+                        </div>
+                        <div style="text-align: center; padding: 15px;">
+                            <button id="btnCopiar" style="border: none; background-color: #F5F5F5; cursor: pointer; text-decoration: underline; padding-bottom: 3px; font-weight: bold; font-size: 16px;" onclick="Copiar()">Copiar código</button>
+                        </div>
+                    </div>
+                    <div style="text-align: center; padding: 10px; font-weight: bold;">
+                        <p>Agora cole este código na opção Pix Copia e cola dentro do seu app.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
