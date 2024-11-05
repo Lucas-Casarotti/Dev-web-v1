@@ -34,7 +34,7 @@ console.log(teste1()); // retorna undefined e em seguida o 'Olá'
 console.log(teste2()); // retorna o 'Olá'
 
 teste1();             // retorna o 'Olá'
-teste2();             // não retorna nada
+teste2();             // retorna o 'Olá'
 
 
 
